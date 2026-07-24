@@ -32,7 +32,7 @@
       "@@context": "https://schema.org",
       "@@type": "RealEstateAgent",
       "name": "MEEM Real Estate Investment LLC",
-      "image": "{{ asset('assets/hero-dubai.webp') }}",
+      "image": "{{ asset('assets/logo.webp') }}",
       "@@id": "{{ url('/') }}#organization",
       "url": "{{ url('/') }}",
       "telephone": "+971 6 886 8888",
@@ -46,18 +46,6 @@
         "streetAddress": "PO Box 29559",
         "addressLocality": "Sharjah",
         "addressCountry": "AE"
-      },
-      "openingHoursSpecification": {
-        "@@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
-        "opens": "09:00",
-        "closes": "18:00"
       }
     }
     </script>
