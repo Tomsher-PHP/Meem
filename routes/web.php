@@ -10,5 +10,5 @@ Route::get('/strategy', [PageController::class, 'strategy'])->name('strategy');
 Route::get('/why-meem', [PageController::class, 'whyMeem'])->name('why-meem');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 
-Route::get('/sitemap.xml', [PageController::class, 'sitemap'])->name('sitemap');
-Route::get('/robots.txt', [PageController::class, 'robots'])->name('robots');
+// Route::get('/sitemap.xml', [PageController::class, 'sitemap'])->name('sitemap');
+// Route::get('/robots.txt', [PageController::class, 'robots'])->name('robots');
