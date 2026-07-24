@@ -293,7 +293,7 @@ body.is-ready .menu-trigger {
 
 .hero {
   min-height: clamp(680px, 57vw, 880px);
-  background-image: url("/assets/hero-dubai.png");
+  background-image: url("/assets/hero-dubai.webp");
   background-position: center;
   background-size: cover;
 }
@@ -337,7 +337,7 @@ body.is-ready .menu-trigger {
 
 .platform-hero {
   min-height: clamp(760px, 56vw, 900px);
-  background-image: url("/assets/platform-banner.png");
+  background-image: url("/assets/platform-banner.webp");
   background-position: center;
   background-size: cover;
 }
@@ -387,7 +387,7 @@ body.is-ready .menu-trigger {
 
 .strategy-hero {
   min-height: clamp(760px, 56vw, 900px);
-  background-image: url("/assets/strategy-banner.png");
+  background-image: url("/assets/strategy-banner.webp");
   background-position: center;
   background-size: cover;
 }
@@ -428,7 +428,7 @@ body.is-ready .menu-trigger {
 
 .why-hero {
   min-height: clamp(650px, 51vw, 820px);
-  background-image: url("/assets/why-banner.png");
+  background-image: url("/assets/why-banner.webp");
   background-position: center;
   background-size: cover;
 }
@@ -670,7 +670,7 @@ body.is-ready .menu-trigger {
     min-height: 760px;
     background-image:
       linear-gradient(180deg, rgba(247, 243, 236, 0.95) 0%, rgba(247, 243, 236, 0.58) 42%, rgba(247, 243, 236, 0.91) 75%, rgba(247, 243, 236, 1) 100%),
-      url("/assets/hero-dubai.png");
+      url("/assets/hero-dubai.webp");
     background-position: 63% center;
   }
 

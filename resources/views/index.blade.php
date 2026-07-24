@@ -25,7 +25,7 @@
 
 <section id="about" class="grid bg-[linear-gradient(90deg,rgba(247,243,236,0.18)_0%,rgba(247,243,236,0.68)_45%,rgba(247,243,236,0.96)_100%),url('/assets/who_we_are_bg.webp')] bg-cover bg-center max-[639px]:bg-[linear-gradient(180deg,rgba(247,243,236,0.18)_0%,rgba(247,243,236,0.78)_48%,rgba(247,243,236,0.98)_100%),url('/assets/who_we_are_bg.webp')] max-[639px]:bg-top lg:min-h-[720px] lg:grid-cols-2">
     <div class="image-reveal overflow-hidden lg:min-h-[720px]" data-reveal="image">
-        <img class="h-full w-full object-cover object-center" src="{{ asset('assets/about-gallery.png') }}" alt="Real estate professionals reviewing a premium Dubai development model">
+        <img class="h-full w-full object-cover object-center" src="{{ asset('assets/about-gallery.webp') }}" alt="Real estate professionals reviewing a premium Dubai development model">
     </div>
     <div class="flex items-center justify-end px-5 py-10 max-[639px]:items-end sm:px-12 sm:py-20 lg:min-h-[720px] lg:px-16 xl:px-[8vw]">
         <div class="max-w-[600px]">

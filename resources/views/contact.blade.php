@@ -4,7 +4,7 @@
 
 @section('content')
 <section class="relative overflow-hidden h-[350px] sm:h-[450px] lg:h-[460px]">
-    <img src="{{ asset('assets/contact_us.png') }}" alt="Contact Us" class="absolute inset-0 w-full h-full object-cover object-center">
+    <img src="{{ asset('assets/contact_us.webp') }}" alt="Contact Us" class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0">
         <div class="mx-auto flex h-full items-end px-5 pb-6 sm:px-10 sm:pb-16 lg:px-16 lg:pb-20 xl:px-20">
             <h1 class="display-title hero-reveal text-[42px] leading-none sm:text-[50px] text-white">
