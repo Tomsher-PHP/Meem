@@ -4,10 +4,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content='noindex, nofollow'>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="description" content="{{ $meta_description ?? 'MEEM Real Estate Investment - Building sustainable real estate value in the UAE.' }}">
+    <link rel="canonical" href="{{ url()->current() }}">
     <link rel="icon" type="image/webp" href="{{ asset('assets/logo.webp') }}">
     <title>{{ $title ?? 'MEEM Real Estate Investment' }}</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="{{ $title ?? 'MEEM Real Estate Investment' }}">
+    <meta property="og:description" content="{{ $meta_description ?? 'MEEM Real Estate Investment - Building sustainable real estate value in the UAE.' }}">
+    <meta property="og:image" content="{{  asset('assets/logo.webp') }}">
+    <meta property="og:site_name" content="MEEM Real Estate Investment">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ url()->current() }}">
+    <meta property="twitter:title" content="{{ $title ?? 'MEEM Real Estate Investment' }}">
+    <meta property="twitter:description" content="{{ $meta_description ?? 'MEEM Real Estate Investment - Building sustainable real estate value in the UAE.' }}">
+    <meta property="twitter:image" content="{{  asset('assets/logo.webp') }}">
+
+    <!-- JSON-LD Structured Data (RealEstateAgent) -->
+    <script type="application/ld+json">
+    {
+      "@@context": "https://schema.org",
+      "@@type": "RealEstateAgent",
+      "name": "MEEM Real Estate Investment LLC",
+      "image": "{{ asset('assets/hero-dubai.webp') }}",
+      "@@id": "{{ url('/') }}#organization",
+      "url": "{{ url('/') }}",
+      "telephone": "+971 6 886 8888",
+      "email": "info@meemrealestate.com",
+      "logo": {
+        "@@type": "ImageObject",
+        "url": "{{ asset('assets/logo.webp') }}"
+      },
+      "address": {
+        "@@type": "PostalAddress",
+        "streetAddress": "PO Box 29559",
+        "addressLocality": "Sharjah",
+        "addressCountry": "AE"
+      },
+      "openingHoursSpecification": {
+        "@@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
