@@ -7,7 +7,7 @@
     <div class="strategy-hero-copy mx-auto px-5 pb-12 sm:px-10 sm:pb-16 lg:px-16 xl:px-20">
         <div class="max-w-[304px]" style="max-width: 304px;">
             <h1 class="display-title hero-reveal text-[50px] leading-none">Strategy</h1>
-            <div class="hero-reveal mt-8 space-y-7 text-justify text-[14px] leading-[1.5] text-meem-deep sm:text-[16px] sm:leading-[1.5]" style="--reveal-delay: 160ms">
+            <div class="hero-reveal mt-8 space-y-3 xl:space-y-7 text-justify text-[14px] leading-[1.5] text-meem-deep sm:text-[16px] sm:leading-[1.5]" style="--reveal-delay: 160ms">
                 <p>
                     MEEM adopts a disciplined and forward-looking investment approach focused on long-term value creation.
                 </p>

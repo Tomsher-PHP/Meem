@@ -20,7 +20,7 @@
         <img class="h-full w-full object-cover object-center" src="{{ asset('assets/about-second-img.webp') }}" alt="Luxury Dubai balcony overlooking the city skyline at sunrise">
     </div>
     <div class="relative z-10 flex items-center px-5 py-10 sm:px-12 sm:py-20 lg:px-16 xl:px-[7vw]">
-        <div class="about-copy max-w-[630px] space-y-7 text-justify text-[14px] leading-[1.5] text-meem-deep sm:text-[15px] sm:leading-[1.5]">
+        <div class="about-copy max-w-[630px] space-y-3 xl:space-y-7 text-justify text-[14px] leading-[1.5] text-meem-deep sm:text-[15px] sm:leading-[1.5]">
             <p class="reveal-up" data-reveal>
                 The company invests in high-potential real estate opportunities that generate sustainable income streams, long-term capital appreciation, and resilient portfolio growth. Through disciplined investment strategies, active asset oversight, and professional property management, the company enhances asset performance while effectively managing risk.
             </p>

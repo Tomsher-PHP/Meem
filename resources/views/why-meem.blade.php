@@ -7,7 +7,7 @@
     <div class="why-hero-copy mx-auto px-5 pb-12 sm:px-10 sm:pb-16 lg:px-16 xl:px-20">
         <div class="max-w-[480px]">
             <h1 class="display-title hero-reveal text-[50px] leading-none">Why MEEM?</h1>
-            <div class="about-copy hero-reveal mt-8 space-y-7 text-justify text-[14px] leading-[1.5] sm:text-[15px] sm:leading-[1.5]" style="--reveal-delay:160ms">
+            <div class="about-copy hero-reveal mt-8 space-y-3 xl:space-y-7 text-justify text-[14px] leading-[1.5] sm:text-[15px] sm:leading-[1.5]" style="--reveal-delay:160ms">
                 <p>
                     MEEM combines UAE market insight, investment expertise, and disciplined asset management to deliver sustainable returns, resilient portfolios, and long-term real estate value.
                 </p>
@@ -24,7 +24,7 @@
         <img class="h-full w-full object-cover object-center" src="{{ asset('assets/why-img1.png') }}" alt="Emirati investor overlooking Dubai beside the UAE flag">
     </div>
     <div class="flex items-center px-5 py-10 sm:px-12 sm:py-14 lg:px-16 xl:px-[7vw]">
-        <div class="w-full space-y-7">
+        <div class="w-full space-y-3 xl:space-y-7">
             <div class="benefit-item reveal-up flex items-center gap-5" data-reveal>
                 <img src="{{ asset('assets/why-icon1.png') }}" class="w-[65px]" alt="">
                 <p class="text-justify">Integrated Expertise across investment, asset, and property management</p>
