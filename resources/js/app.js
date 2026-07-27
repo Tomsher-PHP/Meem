@@ -4,27 +4,40 @@ import Lenis from 'lenis';
 const menuButton = document.querySelector("#menu-button");
 const menuClose = document.querySelector("#menu-close");
 const mobileMenu = document.querySelector("#mobile-menu");
-const mobileLinks = mobileMenu.querySelectorAll("a");
+const mobileLinks = mobileMenu ? mobileMenu.querySelectorAll("a") : [];
 const siteHeader = document.querySelector(".site-header");
 const headerLogo = document.querySelector(".header-logo");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const heroRevealItems = document.querySelectorAll(".hero-reveal");
 
-const mobileMenuTop = mobileMenu.firstElementChild;
-const mobileMenuLogo = headerLogo.cloneNode(true);
+if (mobileMenu && headerLogo) {
+  const mobileMenuTop = mobileMenu.firstElementChild;
+  if (mobileMenuTop) {
+    const mobileMenuLogo = headerLogo.cloneNode(true);
+    mobileMenuLogo.className = "mobile-menu-logo";
+    mobileMenuLogo.removeAttribute("style");
+    mobileMenuTop.className = "flex items-start justify-between";
+    mobileMenuTop.prepend(mobileMenuLogo);
+  }
+  document.body.appendChild(mobileMenu);
+}
 
-mobileMenuLogo.className = "mobile-menu-logo";
-mobileMenuLogo.removeAttribute("style");
-mobileMenuTop.className = "flex items-start justify-between";
-mobileMenuTop.prepend(mobileMenuLogo);
-document.body.appendChild(mobileMenu);
+const showHeroReveals = () => {
+  document.body.classList.add("is-ready");
+  heroRevealItems.forEach((item) => item.classList.add("is-visible"));
+};
 
-requestAnimationFrame(() => {
-  requestAnimationFrame(() => {
-    document.body.classList.add("is-ready");
-    heroRevealItems.forEach((item) => item.classList.add("is-visible"));
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", () => {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(showHeroReveals);
+    });
   });
-});
+} else {
+  requestAnimationFrame(() => {
+    requestAnimationFrame(showHeroReveals);
+  });
+}
 
 function updateHeaderState() {
   siteHeader?.classList.toggle("is-scrolled", window.scrollY > 48);
@@ -53,11 +66,13 @@ if (lenis) {
 }
 
 function setMenu(open) {
-  mobileMenu.classList.toggle("is-open", open);
+  if (mobileMenu) {
+    mobileMenu.classList.toggle("is-open", open);
+    mobileMenu.setAttribute("aria-hidden", String(!open));
+  }
   document.body.classList.toggle("menu-open", open);
   siteHeader?.classList.toggle("menu-active", open);
-  menuButton.setAttribute("aria-expanded", String(open));
-  mobileMenu.setAttribute("aria-hidden", String(!open));
+  menuButton?.setAttribute("aria-expanded", String(open));
 
   if (lenis) {
     open ? lenis.stop() : lenis.start();
