@@ -657,6 +657,14 @@ body.is-ready .menu-trigger {
   }
 }
 
+@media (max-width: 1204px) {
+
+  #platform-page .display-title.hero-reveal,
+  #platform-page .about-copy.hero-reveal {
+    color: #ffffff;
+  }
+}
+
 @media (max-width: 1023px) {
 
   .hero-copy h1,
