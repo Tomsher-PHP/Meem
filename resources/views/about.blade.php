@@ -3,11 +3,13 @@
 @section('page_id', 'about-page')
 
 @section('content')
-<section class="about-hero" style="background-image: url('{{ asset('assets/about-us-banner.webp') }}');">
+<section class="about-hero"  style="background-image: url('{{ asset('assets/about-us-banner.webp') }}');">
     <div class="about-hero-copy mx-auto px-5 pb-12 sm:px-10 sm:pb-16 lg:px-16 xl:px-20">
         <div class="max-w-[310px]">
             <h1 class="display-title hero-reveal text-[50px] leading-none">About Us</h1>
             <p class="about-copy hero-reveal mt-8 text-justify text-[14px] leading-[1.5] text-meem-deep sm:text-[15px] sm:leading-[1.5]" style="--reveal-delay: 160ms">
+                <!--MEEM Real Estate Investment LLC (MEEM) is a UAE-based real estate investment and property management company focused on acquiring, developing, and managing diversified property assets across key sectors, including residential, commercial, hospitality, and retail.-->
+                
                 MEEM Real Estate Investment LLC (MEEM) is a UAE-based real estate investment and property management company focused on acquiring, developing, and managing diversified property assets across key sectors, including residential, commercial, hospitality, and retail.
             </p>
         </div>

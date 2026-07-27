@@ -5,7 +5,7 @@ use App\Http\Controllers\PageController;
 
 Route::get('/', [PageController::class, 'home'])->name('home');
 Route::get('/about', [PageController::class, 'about'])->name('about');
-Route::get('/platform', [PageController::class, 'platform'])->name('platform');
+Route::get('/expertise', [PageController::class, 'platform'])->name('expertise');
 Route::get('/strategy', [PageController::class, 'strategy'])->name('strategy');
 Route::get('/why-meem', [PageController::class, 'whyMeem'])->name('why-meem');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');

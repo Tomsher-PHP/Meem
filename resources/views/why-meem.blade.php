@@ -53,7 +53,7 @@
     <div class="order-2 flex items-center px-5 py-10 sm:px-12 sm:py-16 lg:order-1 lg:px-16 xl:px-[7vw]">
         <div class="reveal-up max-w-[590px]" data-reveal>
             <h2 class="text-4xl font-semibold">Vision</h2>
-            <p class="about-copy mt-5 text-justify text-[14px] leading-[1.5] sm:text-[15px] sm:leading-[1.5]">To be a leading real estate investment and property management platform in the UAE, recognized for delivering sustainable returns, building high-performing property portfolios, and contributing to the nation's economic diversification and urban development.</p>
+            <p class="about-copy mt-5 text-justify text-[14px] leading-[1.5] sm:text-[15px] sm:leading-[1.5]">To be a leading real estate investment and property management company in the UAE, recognized for delivering sustainable returns, building high-performing property portfolios, and contributing to the nation's economic diversification and urban development.</p>
         </div>
     </div>
     <div class="image-reveal why-panel-image order-1 overflow-hidden lg:order-2" data-reveal="image">

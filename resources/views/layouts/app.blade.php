@@ -65,7 +65,7 @@
             <nav class="desktop-nav hidden items-center gap-8 text-[15px] font-semibold text-white lg:flex xl:gap-12" aria-label="Primary navigation">
                 <a class="nav-link {{ request()->routeIs('home') ? 'active text-meem-green' : '' }}" style="--nav-delay: 180ms" href="{{ request()->routeIs('home') ? '#home' : route('home') }}">Home</a>
                 <a class="nav-link {{ request()->routeIs('about') ? 'active text-meem-green' : '' }}" style="--nav-delay: 240ms" href="{{ request()->routeIs('about') ? '#about-page' : route('about') }}">About</a>
-                <a class="nav-link {{ request()->routeIs('platform') ? 'active text-meem-green' : '' }}" style="--nav-delay: 300ms" href="{{ request()->routeIs('platform') ? '#platform-page' : route('platform') }}">Platform</a>
+                <a class="nav-link {{ request()->routeIs('expertise') ? 'active text-meem-green' : '' }}" style="--nav-delay: 300ms" href="{{ request()->routeIs('expertise') ? '#platform-page' : route('expertise') }}">Expertise</a>
                 <a class="nav-link {{ request()->routeIs('strategy') ? 'active text-meem-green' : '' }}" style="--nav-delay: 360ms" href="{{ request()->routeIs('strategy') ? '#strategy-page' : route('strategy') }}">Strategy</a>
                 <a class="nav-link {{ request()->routeIs('why-meem') ? 'active text-meem-green' : '' }}" style="--nav-delay: 420ms" href="{{ request()->routeIs('why-meem') ? '#why-meem-page' : route('why-meem') }}">Why MEEM</a>
                 <a class="nav-link {{ request()->routeIs('contact') ? 'active text-meem-green' : '' }}" style="--nav-delay: 480ms" href="{{ request()->routeIs('contact') ? '#contact-page' : route('contact') }}">Contact</a>
@@ -90,7 +90,7 @@
             <nav class="mt-14 flex flex-col gap-6 font-display text-4xl" aria-label="Mobile navigation">
                 <a style="--mobile-delay: 90ms" href="{{ request()->routeIs('home') ? '#home' : route('home') }}">Home</a>
                 <a style="--mobile-delay: 140ms" href="{{ request()->routeIs('about') ? '#about-page' : route('about') }}">About</a>
-                <a style="--mobile-delay: 190ms" href="{{ request()->routeIs('platform') ? '#platform-page' : route('platform') }}">Platform</a>
+                <a style="--mobile-delay: 190ms" href="{{ request()->routeIs('expertise') ? '#platform-page' : route('expertise') }}">Expertise</a>
                 <a style="--mobile-delay: 240ms" href="{{ request()->routeIs('strategy') ? '#strategy-page' : route('strategy') }}">Strategy</a>
                 <a style="--mobile-delay: 290ms" href="{{ request()->routeIs('why-meem') ? '#why-meem-page' : route('why-meem') }}">Why MEEM</a>
                 <a style="--mobile-delay: 340ms" href="{{ request()->routeIs('contact') ? '#contact-page' : route('contact') }}">Contact</a>
