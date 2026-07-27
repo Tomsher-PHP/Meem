@@ -337,7 +337,7 @@ body.is-ready .menu-trigger {
 
 .platform-hero {
   min-height: clamp(760px, 56vw, 900px);
-  background-image: url("/assets/platform-hero.png");
+  background-image: url("/assets/platform-banner.webp");
   background-position: center;
   background-size: cover;
 }
@@ -483,7 +483,7 @@ body.is-ready .menu-trigger {
 
 .contact-hero {
   min-height: clamp(560px, 39vw, 700px);
-  background-image: url("/assets/contact_us.png");
+  background-image: url("/assets/contact_us.webp");
   background-position: center;
   background-size: cover;
 }
@@ -694,7 +694,7 @@ body.is-ready .menu-trigger {
     min-height: 810px;
     background-image:
       linear-gradient(180deg, rgba(247, 243, 236, 0.58) 0%, rgba(247, 243, 236, 0.16) 43%, rgba(247, 243, 236, 0.93) 70%, rgba(247, 243, 236, 1) 100%),
-      url("/assets/about-banner.png");
+      url("/assets/about-banner.webp");
     background-position: 42% center;
   }
 
@@ -706,7 +706,7 @@ body.is-ready .menu-trigger {
     min-height: 810px;
     background-image:
       linear-gradient(180deg, rgba(247, 243, 236, 0.72) 0%, rgba(247, 243, 236, 0.12) 40%, rgba(247, 243, 236, 0.92) 72%, rgba(247, 243, 236, 1) 100%),
-      url("/assets/platform-hero.png");
+      url("/assets/platform-banner.webp");
     background-position: 64% center;
   }
 
@@ -722,7 +722,7 @@ body.is-ready .menu-trigger {
     min-height: 810px;
     background-image:
       linear-gradient(180deg, rgba(247, 243, 236, 0.48) 0%, rgba(247, 243, 236, 0.08) 43%, rgba(247, 243, 236, 0.93) 73%, rgba(247, 243, 236, 1) 100%),
-      url("/assets/strategy-hero.png");
+      url("/assets/strategy-banner.webp");
     background-position: 70% center;
   }
 
@@ -734,7 +734,7 @@ body.is-ready .menu-trigger {
     min-height: 760px;
     background-image:
       linear-gradient(180deg, rgba(247, 243, 236, 0.72) 0%, rgba(247, 243, 236, 0.12) 42%, rgba(247, 243, 236, 0.92) 74%, rgba(247, 243, 236, 1) 100%),
-      url("/assets/why-hero.png");
+      url("/assets/why-banner.webp");
     background-position: 67% center;
   }
 
