@@ -27,7 +27,7 @@
     <div class="image-reveal overflow-hidden lg:min-h-[720px]" data-reveal="image">
         <img class="h-full w-full object-cover object-center" src="{{ asset('assets/about-gallery.webp') }}" alt="Real estate professionals reviewing a premium Dubai development model">
     </div>
-    <div class="flex items-center justify-end px-5 py-10 max-[639px]:items-end sm:px-12 sm:py-20 lg:min-h-[720px] lg:px-16 xl:px-[8vw]">
+    <div class="flex items-center justify-start px-5 py-10 max-[639px]:items-end sm:px-12 sm:py-20 lg:min-h-[720px] lg:px-16 xl:px-[8vw]">
         <div class="max-w-[600px]">
             <h2 class="display-title reveal-up text-[2.25rem] xl:text-[50px] leading-none" data-reveal>Who We Are</h2>
             <div class="reveal-up mt-9 space-y-3 xl:space-y-7 text-justify text-[14px] leading-[1.5] text-meem-deep sm:text-[15px] sm:leading-[1.5]" data-reveal style="--reveal-delay: 120ms">
