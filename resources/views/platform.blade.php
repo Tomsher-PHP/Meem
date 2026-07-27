@@ -6,9 +6,9 @@
 <section class="platform-hero">
     <div class="platform-hero-copy mx-auto px-5 pb-12 sm:px-10 sm:pb-16 lg:px-16 xl:px-20">
         <div class="max-w-[310px] text-white">
-            <h1 class="display-title hero-reveal text-[50px] leading-none">Platform</h1>
+            <h1 class="display-title hero-reveal text-[50px] leading-none">Expertise</h1>
             <p class="about-copy hero-reveal mt-8 text-justify text-[14px] leading-[1.5] sm:text-[15px] sm:leading-[1.5]" style="--reveal-delay: 160ms">
-                MEEM delivers a fully integrated real estate platform combining investment, asset, and property management to ensure operational efficiency, asset sustainability, and consistent income generation. Our services are designed to deliver value across the entire real estate lifecycle, from acquisition to ongoing operations.
+                MEEM delivers a fully integrated real estate expertise combining investment, asset, and property management to ensure operational efficiency, asset sustainability, and consistent income generation. Our services are designed to deliver value across the entire real estate lifecycle, from acquisition to ongoing operations.
             </p>
         </div>
     </div>
