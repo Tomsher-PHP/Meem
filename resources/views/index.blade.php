@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<section id="home" class="hero">
+<section id="home" class="hero relative">
+    <div class="absolute inset-0 bg-[linear-gradient(to_top_right,rgba(247,243,236,0.95)_0%,rgba(247,243,236,0.65)_35%,transparent_65%)]"></div>
     <div class="hero-copy mx-auto px-5 pb-12 sm:px-10 sm:pb-16 lg:px-16 xl:px-20">
         <div class="max-w-[780px]">
             <h1 class="display-title hero-reveal text-[50px] leading-[.94] text-meem-green">

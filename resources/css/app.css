@@ -293,7 +293,7 @@ body.is-ready .menu-trigger {
 
 .hero {
   min-height: clamp(680px, 57vw, 880px);
-  background-image: url("/assets/hero-dubai.webp");
+  background-image: url("/assets/hero-dubai-new.webp");
   background-position: center;
   background-size: cover;
 }
@@ -657,6 +657,14 @@ body.is-ready .menu-trigger {
   }
 }
 
+@media (min-width: 1024px) {
+
+  #platform-page .display-title.hero-reveal,
+  #platform-page .about-copy.hero-reveal {
+    color: #ffffff;
+  }
+}
+
 @media (max-width: 1023px) {
 
   .hero-copy h1,
@@ -672,7 +680,7 @@ body.is-ready .menu-trigger {
     min-height: 760px;
     background-image:
       linear-gradient(180deg, rgba(247, 243, 236, 0.95) 0%, rgba(247, 243, 236, 0.58) 42%, rgba(247, 243, 236, 0.91) 75%, rgba(247, 243, 236, 1) 100%),
-      url("/assets/hero-dubai.webp");
+      url("/assets/hero-dubai-new.webp");
     background-position: 63% center;
   }
 
@@ -684,7 +692,7 @@ body.is-ready .menu-trigger {
     min-height: 810px;
     background-image:
       linear-gradient(180deg, rgba(247, 243, 236, 0.58) 0%, rgba(247, 243, 236, 0.16) 43%, rgba(247, 243, 236, 0.93) 70%, rgba(247, 243, 236, 1) 100%),
-      url("/assets/about-banner.webp");
+      url("/assets/about-us-banner.webp");
     background-position: 42% center;
   }
 
@@ -747,6 +755,9 @@ body.is-ready .menu-trigger {
 }
 
 @media (max-width: 639px) {
+
+
+
   .hero-title-desktop {
     display: none;
   }
@@ -1000,7 +1011,7 @@ body.is-ready .menu-trigger {
   .strategy-hero-copy,
   .why-hero-copy {
     min-height: 0;
-    padding-top: 240px;
+    padding-top: 280px;
     padding-bottom: 48px;
     padding-inline: 20px;
   }
