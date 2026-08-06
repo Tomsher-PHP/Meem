@@ -293,7 +293,7 @@ body.is-ready .menu-trigger {
 
 .hero {
   min-height: clamp(680px, 57vw, 880px);
-  background-image: url("/assets/hero-dubai-new.webp");
+  background-image: url("/assets/hero-dubai-new1.webp");
   background-position: center;
   background-size: cover;
 }
@@ -680,7 +680,7 @@ body.is-ready .menu-trigger {
     min-height: 760px;
     background-image:
       linear-gradient(180deg, rgba(247, 243, 236, 0.95) 0%, rgba(247, 243, 236, 0.58) 42%, rgba(247, 243, 236, 0.91) 75%, rgba(247, 243, 236, 1) 100%),
-      url("/assets/hero-dubai-new.webp");
+      url("/assets/hero-dubai-new1.webp");
     background-position: 63% center;
   }
 

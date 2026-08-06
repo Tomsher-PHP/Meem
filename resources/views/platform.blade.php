@@ -9,7 +9,9 @@
             <h1 class="display-title hero-reveal text-[50px] leading-none">Expertise</h1>
             <p class="about-copy hero-reveal mt-8 text-justify text-[14px] leading-[1.5] sm:text-[15px] sm:leading-[1.5]" style="--reveal-delay: 160ms">
                 {{-- MEEM delivers a fully integrated real estate expertise combining investment, asset, and property management to ensure operational efficiency, asset sustainability, and consistent income generation.  --}}
-                MEEM delivers a fully integrated real estate solution that combines investment, asset, and property management to ensure operational efficiency, asset sustainability, and consistent income generation. Our services are designed to deliver value across the entire real estate lifecycle, from acquisition to ongoing operations.
+                {{-- MEEM delivers a fully integrated real estate solution that combines investment, asset, and property management to ensure operational efficiency, asset sustainability, and consistent income generation. Our services are designed to deliver value across the entire real estate lifecycle, from acquisition to ongoing operations. --}}
+
+                MEEM delivers a fully integrated real estate solution that combines investment, asset, and property management to ensure operational efficiency, asset sustainability, and consistent income generation.
             </p>
         </div>
     </div>
