@@ -23,7 +23,7 @@
         <h2 class="mt-8 text-3xl font-semibold">Investment Management</h2>
         <div class="my-6 h-px w-full max-w-[370px] bg-white/80"></div>
         <p class="max-w-[390px] text-center text-[15px] leading-[1.5]">
-            Identifying and acquiring high-potential real estate opportunities that deliver long-term value and sustainable growth.
+            Identifying and acquiring high-potential real estate opportunities that deliver long-term value<br> and sustainable growth.
         </p>
     </article>
 
