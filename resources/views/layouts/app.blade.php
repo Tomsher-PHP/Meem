@@ -62,7 +62,7 @@
                 <img src="{{ asset('assets/logo.webp') }}" alt="MEEM Real Estate Investment">
             </a>
 
-            <nav class="desktop-nav hidden items-center gap-8 text-[15px] font-semibold text-white lg:flex xl:gap-12" aria-label="Primary navigation">
+            <nav class="desktop-nav hidden items-center gap-8 text-[15px] font-semibold text-color-meem-green lg:flex xl:gap-12" aria-label="Primary navigation">
                 <a class="nav-link {{ request()->routeIs('home') ? 'active text-meem-green' : '' }}" style="--nav-delay: 180ms" href="{{ request()->routeIs('home') ? '#home' : route('home') }}">Home</a>
                 <a class="nav-link {{ request()->routeIs('about') ? 'active text-meem-green' : '' }}" style="--nav-delay: 240ms" href="{{ request()->routeIs('about') ? '#about-page' : route('about') }}">About</a>
                 <a class="nav-link {{ request()->routeIs('expertise') ? 'active text-meem-green' : '' }}" style="--nav-delay: 300ms" href="{{ request()->routeIs('expertise') ? '#platform-page' : route('expertise') }}">Expertise</a>
