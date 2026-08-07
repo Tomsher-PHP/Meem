@@ -667,6 +667,17 @@ body.is-ready .menu-trigger {
 
 @media (max-width: 1023px) {
 
+  .site-header,
+  .site-header.is-scrolled {
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+  }
+
+  .site-header .header-logo img {
+    padding-top: 0px !important;
+  }
+
   .hero-copy h1,
   .about-hero-copy h1,
   .platform-hero-copy h1,
@@ -1057,4 +1068,12 @@ body.is-ready .menu-trigger {
 
 .is-scrolled .header-logo img {
   width: 78%;
+}
+
+.site-header .header-logo img {
+  padding-top: 85px;
+}
+
+.site-header.is-scrolled .header-logo img {
+  padding-top: 0px;
 }

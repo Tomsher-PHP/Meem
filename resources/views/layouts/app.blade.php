@@ -56,8 +56,8 @@
 </head>
 
 <body>
-    <header class="site-header fixed inset-x-0 top-0 z-30">
-        <div class="header-shell mx-auto flex items-start justify-between px-6 pt-7 sm:px-10 sm:pt-10 lg:px-16 lg:pt-14 xl:px-20">
+    <header class="site-header fixed inset-x-0 top-0 z-30 bg-[#f7f3ece6] overflow-visible max-h-[85px]">
+        <div class="header-shell mx-auto flex items-start justify-between px-6 pt-7 sm:px-10 sm:pt-10 lg:px-16 lg:pt-7 xl:px-20">
             <a class="header-logo logo-mark scale-[.52] origin-top-left sm:scale-[.85] lg:scale-100" href="{{ request()->routeIs('home') ? '#home' : route('home') }}" aria-label="MEEM home">
                 <img src="{{ asset('assets/logo.webp') }}" alt="MEEM Real Estate Investment">
             </a>
