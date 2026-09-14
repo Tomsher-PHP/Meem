@@ -197,6 +197,16 @@ body.is-ready .menu-trigger {
   transition: opacity 320ms cubic-bezier(0.16, 1, 0.3, 1), transform 320ms cubic-bezier(0.16, 1, 0.3, 1), visibility 320ms;
 }
 
+body:has(#contact-page) {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+#contact-page {
+  flex: 1 0 auto;
+}
+
 @media (min-width: 640px) {
   #mobile-menu {
     top: 5.5rem;
