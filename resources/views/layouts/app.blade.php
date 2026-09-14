@@ -83,7 +83,7 @@
         </div>
 
         <!-- Mobile Menu Panel -->
-        <div id="mobile-menu blur-[40px]" aria-hidden="true">
+        <div id="mobile-menu" aria-hidden="true">
             <nav aria-label="Primary navigation">
                 <a class="{{ request()->routeIs('home') ? 'active' : '' }}" style="--mobile-delay: 50ms" href="{{ request()->routeIs('home') ? '#home' : route('home') }}">Home</a>
                 <a class="{{ request()->routeIs('about') ? 'active' : '' }}" style="--mobile-delay: 90ms" href="{{ request()->routeIs('about') ? '#about-page' : route('about') }}">About</a>
