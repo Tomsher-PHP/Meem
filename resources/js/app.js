@@ -2,7 +2,6 @@ import './bootstrap';
 import Lenis from 'lenis';
 
 const menuButton = document.querySelector("#menu-button");
-const menuClose = document.querySelector("#menu-close");
 const mobileMenu = document.querySelector("#mobile-menu");
 const mobileLinks = mobileMenu ? mobileMenu.querySelectorAll("a") : [];
 const siteHeader = document.querySelector(".site-header");
@@ -10,17 +9,7 @@ const headerLogo = document.querySelector(".header-logo");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const heroRevealItems = document.querySelectorAll(".hero-reveal");
 
-if (mobileMenu && headerLogo) {
-  const mobileMenuTop = mobileMenu.firstElementChild;
-  if (mobileMenuTop) {
-    const mobileMenuLogo = headerLogo.cloneNode(true);
-    mobileMenuLogo.className = "mobile-menu-logo";
-    mobileMenuLogo.removeAttribute("style");
-    mobileMenuTop.className = "flex items-start justify-between";
-    mobileMenuTop.prepend(mobileMenuLogo);
-  }
-  document.body.appendChild(mobileMenu);
-}
+
 
 const showHeroReveals = () => {
   document.body.classList.add("is-ready");
@@ -66,16 +55,21 @@ if (lenis) {
 }
 
 function setMenu(open) {
-  if (mobileMenu) {
-    mobileMenu.classList.toggle("is-open", open);
-    mobileMenu.setAttribute("aria-hidden", String(!open));
-  }
-  document.body.classList.toggle("menu-open", open);
-  siteHeader?.classList.toggle("menu-active", open);
-  menuButton?.setAttribute("aria-expanded", String(open));
+  if (!mobileMenu) return;
+  
+  // Determine new state (toggle if not explicitly provided)
+  const isOpen = typeof open === "boolean" ? open : !mobileMenu.classList.contains("is-open");
+  
+  // Update classes and aria attributes
+  mobileMenu.classList.toggle("is-open", isOpen);
+  menuButton?.setAttribute("aria-expanded", String(isOpen));
+  mobileMenu.setAttribute("aria-hidden", String(!isOpen));
+  
+  document.body.classList.toggle("menu-open", isOpen);
+  siteHeader?.classList.toggle("menu-active", isOpen);
 
   if (lenis) {
-    open ? lenis.stop() : lenis.start();
+    isOpen ? lenis.stop() : lenis.start();
   }
 }
 
@@ -107,10 +101,28 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   });
 });
 
-menuButton.addEventListener("click", () => setMenu(true));
-menuClose.addEventListener("click", () => setMenu(false));
+// Toggle menu on button click
+menuButton?.addEventListener("click", (e) => {
+  e.stopPropagation();
+  setMenu();
+});
+
+// Close menu when a link is clicked
 mobileLinks.forEach((link) => link.addEventListener("click", () => setMenu(false)));
 
+// Close menu when clicking outside
+document.addEventListener("click", (event) => {
+  if (
+    mobileMenu &&
+    mobileMenu.classList.contains("is-open") &&
+    !mobileMenu.contains(event.target) &&
+    !menuButton?.contains(event.target)
+  ) {
+    setMenu(false);
+  }
+});
+
+// Close menu when pressing Escape key
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     setMenu(false);

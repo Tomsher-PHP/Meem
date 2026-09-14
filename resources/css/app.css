@@ -131,12 +131,43 @@ h6 {
 }
 
 .menu-trigger {
-  transform: translateY(-18px) scale(0.9);
-  transition:
-    opacity 700ms cubic-bezier(0.22, 1, 0.36, 1),
-    transform 700ms cubic-bezier(0.22, 1, 0.36, 1),
-    background-color 180ms ease;
-  transition-delay: 180ms;
+  opacity: 1;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  color: var(--color-meem-green);
+  transition: background-color 180ms ease, border-color 180ms ease, transform 150ms ease, opacity 300ms ease;
+}
+
+.menu-trigger .icon-burger,
+.menu-trigger .icon-cross {
+  grid-area: 1 / 1;
+  transition: transform 300ms cubic-bezier(0.16, 1, 0.3, 1), opacity 300ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.menu-trigger[aria-expanded="false"] .icon-burger {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
+}
+
+.menu-trigger[aria-expanded="false"] .icon-cross {
+  opacity: 0;
+  transform: rotate(-90deg) scale(0.6);
+  pointer-events: none;
+}
+
+.menu-trigger[aria-expanded="true"] .icon-burger {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.6);
+  pointer-events: none;
+}
+
+.menu-trigger[aria-expanded="true"] .icon-cross {
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
 }
 
 body.is-ready .header-logo,
@@ -149,28 +180,52 @@ body.is-ready .menu-trigger {
 #mobile-menu {
   display: block;
   position: fixed;
-  inset: 0;
+  top: 4.75rem;
+  right: 1.5rem;
   z-index: 100;
-  width: 100vw;
-  height: 100vh;
-  height: 100dvh;
-  overflow-y: auto;
+  width: 250px;
+  max-width: calc(100vw - 3rem);
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.45) 0%, #d8b27a 100%);
+  backdrop-filter: blur(40px) saturate(180%);
+  -webkit-backdrop-filter: blur(40px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.16), inset 0 1px 1.5px rgba(255, 255, 255, 0.7);
   visibility: hidden;
-  opacity: 1;
+  opacity: 0;
   pointer-events: none;
-  background-color: var(--color-meem-ivory);
-  isolation: isolate;
-  transform: translateY(-14px);
-  transition:
-    visibility 0s linear 450ms,
-    transform 450ms cubic-bezier(0.22, 1, 0.36, 1);
+  transform: scale(0.92) translateY(-12px);
+  transform-origin: top right;
+  transition: opacity 320ms cubic-bezier(0.16, 1, 0.3, 1), transform 320ms cubic-bezier(0.16, 1, 0.3, 1), visibility 320ms;
+}
+
+@media (min-width: 640px) {
+  #mobile-menu {
+    top: 5.5rem;
+    right: 2.5rem;
+    width: 260px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #mobile-menu {
+    top: 4.75rem;
+    right: 4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  #mobile-menu {
+    right: 5rem;
+  }
 }
 
 #mobile-menu.is-open {
   visibility: visible;
+  opacity: 1;
   pointer-events: auto;
-  transform: none;
-  transition-delay: 0s;
+  transform: scale(1) translateY(0);
 }
 
 .mobile-menu-logo {
@@ -209,59 +264,41 @@ body.is-ready .menu-trigger {
   transition-delay: 80ms;
 }
 
-#mobile-menu nav a,
-#menu-close {
-  opacity: 0;
-  transform: translateY(24px);
-  transition:
-    opacity 500ms cubic-bezier(0.22, 1, 0.36, 1),
-    transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
+#mobile-menu nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 #mobile-menu nav a {
+  display: block;
+  padding: 0.95rem 0;
   font-family: var(--font-body);
+  font-size: 1.15rem;
   font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-meem-deep);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 280ms ease, transform 280ms ease, color 200ms ease;
 }
 
-#menu-close {
-  position: absolute;
-  top: 2.25rem;
-  right: 1.5rem;
-  z-index: 2;
-  transform: rotate(-45deg) scale(0.8);
+#mobile-menu nav a:last-child {
+  border-bottom: none;
 }
 
-@media (min-width: 640px) {
-  #menu-close {
-    top: 3rem;
-    right: 2.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  #menu-close {
-    top: 2.25rem;
-    right: 4rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  #menu-close {
-    top: 2.25rem;
-    right: 5rem;
-  }
+#mobile-menu nav a.active,
+#mobile-menu nav a.is-active,
+#mobile-menu nav a:hover {
+  color: #ffffff;
 }
 
 #mobile-menu.is-open nav a {
   opacity: 1;
-  transform: none;
-  transition-delay: var(--mobile-delay, 0ms);
-}
-
-#mobile-menu.is-open #menu-close {
-  opacity: 1;
-  transform: none;
-  transition-delay: 100ms;
+  transform: translateY(0);
+  transition-delay: calc(var(--mobile-delay, 0ms) + 60ms);
 }
 
 .hero-reveal {

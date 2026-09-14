@@ -62,29 +62,35 @@
                 <img src="{{ asset('assets/logo.webp') }}" alt="MEEM Real Estate Investment">
             </a>
 
-            <button id="menu-button" class="menu-trigger cursor-pointer mt-2 grid h-11 w-11 place-items-center border border-meem-green/30 bg-meem-deep text-meem-ivory backdrop-blur-sm" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
-                <span class="sr-only">Open menu</span>
-                <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+            <!-- Burger Menu Trigger Button -->
+            <button id="menu-button"
+                class="menu-trigger cursor-pointer mt-2 grid h-11 w-11 place-items-center active:scale-95"
+                type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+                <span class="sr-only">Toggle menu</span>
+                
+                <!-- Hamburger Icon -->
+                <svg class="icon-burger h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" aria-hidden="true">
                     <path d="M4 7h16M4 12h16M4 17h16" />
+                </svg>
+                
+                <!-- Cross Icon -->
+                <svg class="icon-cross h-10 w-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" aria-hidden="true">
+                    <path d="M6 6l12 12M18 6 6 18" />
                 </svg>
             </button>
         </div>
 
-        <div id="mobile-menu" class="fixed inset-0 z-40 bg-meem-ivory px-6 pt-7 sm:px-10 sm:pt-10 lg:px-16 lg:pt-7 xl:px-20 pb-8">
-            <div class="flex justify-end">
-                <button id="menu-close" class="grid h-11 w-11 place-items-center border border-meem-green/30" type="button" aria-label="Close menu">
-                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
-                        <path d="M6 6l12 12M18 6 6 18" />
-                    </svg>
-                </button>
-            </div>
-            <nav class="mt-14 flex flex-col gap-6 font-display text-4xl sm:text-5xl lg:text-6xl lg:gap-8" aria-label="Navigation">
-                <a style="--mobile-delay: 90ms" href="{{ request()->routeIs('home') ? '#home' : route('home') }}">Home</a>
-                <a style="--mobile-delay: 140ms" href="{{ request()->routeIs('about') ? '#about-page' : route('about') }}">About</a>
-                <a style="--mobile-delay: 190ms" href="{{ request()->routeIs('expertise') ? '#platform-page' : route('expertise') }}">Expertise</a>
-                <a style="--mobile-delay: 240ms" href="{{ request()->routeIs('strategy') ? '#strategy-page' : route('strategy') }}">Strategy</a>
-                <a style="--mobile-delay: 290ms" href="{{ request()->routeIs('why-meem') ? '#why-meem-page' : route('why-meem') }}">Why MEEM</a>
-                <a style="--mobile-delay: 340ms" href="{{ request()->routeIs('contact') ? '#contact-page' : route('contact') }}">Contact</a>
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" aria-hidden="true">
+            <nav aria-label="Primary navigation">
+                <a class="{{ request()->routeIs('home') ? 'active' : '' }}" style="--mobile-delay: 50ms" href="{{ request()->routeIs('home') ? '#home' : route('home') }}">Home</a>
+                <a class="{{ request()->routeIs('about') ? 'active' : '' }}" style="--mobile-delay: 90ms" href="{{ request()->routeIs('about') ? '#about-page' : route('about') }}">About</a>
+                <a class="{{ request()->routeIs('expertise') ? 'active' : '' }}" style="--mobile-delay: 130ms" href="{{ request()->routeIs('expertise') ? '#platform-page' : route('expertise') }}">Expertise</a>
+                <a class="{{ request()->routeIs('strategy') ? 'active' : '' }}" style="--mobile-delay: 170ms" href="{{ request()->routeIs('strategy') ? '#strategy-page' : route('strategy') }}">Strategy</a>
+                <a class="{{ request()->routeIs('why-meem') ? 'active' : '' }}" style="--mobile-delay: 210ms" href="{{ request()->routeIs('why-meem') ? '#why-meem-page' : route('why-meem') }}">Why MEEM</a>
+                <a class="{{ request()->routeIs('contact') ? 'active' : '' }}" style="--mobile-delay: 250ms" href="{{ request()->routeIs('contact') ? '#contact-page' : route('contact') }}">Contact</a>
             </nav>
         </div>
     </header>
