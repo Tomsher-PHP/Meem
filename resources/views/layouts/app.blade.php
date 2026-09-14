@@ -82,8 +82,16 @@
             </button>
         </div>
 
+        @php
+            $blurClass = match($size ?? 'lg') {
+                'xl' => 'backdrop-blur-xl',
+                'lg' => 'backdrop-blur-lg',
+                default => 'backdrop-blur-sm',
+            };
+        @endphp
+
         <!-- Mobile Menu Panel -->
-        <div id="mobile-menu" aria-hidden="true">
+        <div id="mobile-menu" class="{{ $blurClass }}" aria-hidden="true">
             <nav aria-label="Primary navigation">
                 <a class="{{ request()->routeIs('home') ? 'active' : '' }}" style="--mobile-delay: 50ms" href="{{ request()->routeIs('home') ? '#home' : route('home') }}">Home</a>
                 <a class="{{ request()->routeIs('about') ? 'active' : '' }}" style="--mobile-delay: 90ms" href="{{ request()->routeIs('about') ? '#about-page' : route('about') }}">About</a>
