@@ -9,7 +9,9 @@ const headerLogo = document.querySelector(".header-logo");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const heroRevealItems = document.querySelectorAll(".hero-reveal");
 
-
+if (mobileMenu) {
+  document.body.appendChild(mobileMenu);
+}
 
 const showHeroReveals = () => {
   document.body.classList.add("is-ready");
@@ -68,9 +70,7 @@ function setMenu(open) {
   document.body.classList.toggle("menu-open", isOpen);
   siteHeader?.classList.toggle("menu-active", isOpen);
 
-  if (lenis) {
-    isOpen ? lenis.stop() : lenis.start();
-  }
+
 }
 
 function scrollToTarget(target) {

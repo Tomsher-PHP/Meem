@@ -32,9 +32,7 @@ body {
   font-weight: 400;
 }
 
-body.menu-open {
-  overflow: hidden;
-}
+
 
 .site-header {
   transition:
@@ -73,7 +71,6 @@ body.menu-open {
 
 .site-header.is-scrolled .menu-trigger {
   margin-top: 8px;
-  background: #3f533f;
 }
 
 .display-title {
@@ -187,9 +184,9 @@ body.is-ready .menu-trigger {
   max-width: calc(100vw - 3rem);
   padding: 1.5rem 2rem;
   border-radius: 1rem;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.45) 0%, #d8b27a 100%);
-  backdrop-filter: blur(40px) saturate(180%);
-  -webkit-backdrop-filter: blur(40px) saturate(180%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.45) 0%, rgba(216, 178, 122, 0.55) 100%);
+  backdrop-filter: blur(40px) !important;
+  -webkit-backdrop-filter: blur(40px) !important;
   border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.16), inset 0 1px 1.5px rgba(255, 255, 255, 0.7);
   visibility: hidden;
@@ -730,6 +727,11 @@ body.is-ready .menu-trigger {
     background: transparent;
     box-shadow: none;
     backdrop-filter: none;
+  }
+
+  .site-header.is-scrolled .menu-trigger {
+    color: #ffffff;
+    background-color: var(--color-meem-deep);
   }
 
   .site-header .header-logo img {
