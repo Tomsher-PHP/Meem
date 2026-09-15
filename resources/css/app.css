@@ -723,6 +723,14 @@ body:has(#contact-page) {
 }
 
 @media (min-width: 1024px) {
+  .menu-trigger {
+    color: #ffffff;
+    transition: color 180ms ease;
+  }
+
+  .site-header.is-scrolled .menu-trigger {
+    color: var(--color-meem-green);
+  }
 
   #platform-page .display-title.hero-reveal,
   #platform-page .about-copy.hero-reveal {
