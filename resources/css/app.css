@@ -770,7 +770,9 @@ body:has(#contact-page) {
     /* background-image:
       linear-gradient(180deg, rgba(247, 243, 236, 0.95) 0%, rgba(247, 243, 236, 0.58) 42%, rgba(247, 243, 236, 0.91) 75%, rgba(247, 243, 236, 1) 100%),
       url("/assets/hero-dubai-new1.webp"); */
-    background-image: url("/assets/hero-dubai-new1.webp");
+    background-image:
+      linear-gradient(180deg, rgb(247 243 236 / 0%) 0%, rgb(247 243 236 / 0%) 42%, rgb(247 243 236) 75%, rgba(247, 243, 236, 1) 100%),
+      url("/assets/hero-dubai-new1.webp");
     background-position: 63% center;
   }
 
@@ -783,7 +785,9 @@ body:has(#contact-page) {
     /* background-image:
       linear-gradient(180deg, rgba(247, 243, 236, 0.58) 0%, rgba(247, 243, 236, 0.16) 43%, rgba(247, 243, 236, 0.93) 70%, rgba(247, 243, 236, 1) 100%),
       url("/assets/about-us-banner.webp"); */
-    background-image: url("/assets/about-us-banner.webp");
+    background-image:
+      linear-gradient(180deg, rgb(247 243 236 / 0%) 0%, rgb(247 243 236 / 0%) 42%, rgb(247 243 236) 75%, rgba(247, 243, 236, 1) 100%),
+      url("/assets/about-us-banner.webp");
     background-position: 42% center;
   }
 
@@ -796,7 +800,9 @@ body:has(#contact-page) {
     /* background-image:
       linear-gradient(180deg, rgba(247, 243, 236, 0.72) 0%, rgba(247, 243, 236, 0.12) 40%, rgba(247, 243, 236, 0.92) 72%, rgba(247, 243, 236, 1) 100%),
       url("/assets/platform-banner.webp"); */
-    background-image: url("/assets/platform-banner.webp");
+    background-image:
+      linear-gradient(180deg, rgb(247 243 236 / 0%) 0%, rgb(247 243 236 / 0%) 42%, rgb(247 243 236) 75%, rgba(247, 243, 236, 1) 100%),
+      url("/assets/platform-banner.webp");
     background-position: 64% center;
   }
 
@@ -813,7 +819,9 @@ body:has(#contact-page) {
     /* background-image:
       linear-gradient(180deg, rgba(247, 243, 236, 0.48) 0%, rgba(247, 243, 236, 0.08) 43%, rgba(247, 243, 236, 0.93) 73%, rgba(247, 243, 236, 1) 100%),
       url("/assets/strategy-banner.webp"); */
-    background-image: url("/assets/strategy-banner.webp");
+    background-image:
+      linear-gradient(180deg, rgb(247 243 236 / 0%) 0%, rgb(247 243 236 / 0%) 42%, rgb(247 243 236) 75%, rgba(247, 243, 236, 1) 100%),
+      url("/assets/strategy-banner.webp");
     background-position: 70% center;
   }
 
@@ -826,7 +834,9 @@ body:has(#contact-page) {
     /* background-image:
       linear-gradient(180deg, rgba(247, 243, 236, 0.72) 0%, rgba(247, 243, 236, 0.12) 42%, rgba(247, 243, 236, 0.92) 74%, rgba(247, 243, 236, 1) 100%),
       url("/assets/why-banner.webp"); */
-    background-image: url("/assets/why-banner.webp");
+    background-image:
+      linear-gradient(180deg, rgb(247 243 236 / 0%) 0%, rgb(247 243 236 / 0%) 42%, rgb(247 243 236) 75%, rgba(247, 243, 236, 1) 100%),
+      url("/assets/why-banner.webp");
     background-position: 67% center;
   }
 
